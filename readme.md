@@ -1,4 +1,4 @@
-# Succ
+# succ-js
 
 ## Installation
 
