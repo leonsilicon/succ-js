@@ -49,5 +49,8 @@
 			"pnpm run lint",
 			"pnpm run prettier"
 		]
+	},
+	"publishConfig": {
+		"directory": "dist"
 	}
 }
