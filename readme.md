@@ -8,7 +8,7 @@ pnpm add succ-js
 
 ## Usage
 
-```
+```typescript
 import { succ } from 'succ-js';
 
 console.log(succ("abcd")); // "abce"
