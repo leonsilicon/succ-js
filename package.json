@@ -11,6 +11,7 @@
 		]
 	},
 	"scripts": {
+		"release": "lionp",
 		"prepare": "simple-git-hooks",
 		"start": "node-ts ./src/index.ts",
 		"test": "NODE_OPTIONS=--experimental-vm-modules jest",
@@ -35,7 +36,6 @@
 		"tsc-alias": "^1.5.0",
 		"tsm": "^2.2.1",
 		"typescript": "^4.5.4"
-
 	},
 	"simple-git-hooks": {
 		"pre-commit": "pnpm exec node-ts ./scripts/hooks/pre-commit.ts",
