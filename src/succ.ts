@@ -1,3 +1,11 @@
+const subtractChar = (char: string, sub: string) =>
+	char.codePointAt(0)! - sub.codePointAt(0)!;
+
+const isDigit = (char: string) => char >= '0' && char <= '9';
+const isAlpha = (char: string) =>
+	char.toLowerCase() >= 'a' && char.toLowerCase() <= 'z';
+const isUpper = (char: string) => isAlpha(char) && char.toUpperCase() === char;
+
 /*
  * An implementation of Ruby's string.succ method.
  *
@@ -15,14 +23,6 @@
  * succ("1999zzz")   == "2000aaa"
  * succ("ZZZ9999")   == "AAAA0000"
  */
-
-const subtractChar = (char: string, sub: string) =>
-	char.codePointAt(0)! - sub.codePointAt(0)!
-
-const isDigit = (char: string) => char >= '0' && char <= '9';
-const isAlpha = (char: string) => char.toLowerCase() >= 'a' && char.toLowerCase() <= 'z';
-const isUpper = (char: string) => isAlpha(char) && char.toUpperCase() === char;
-
 export function succ(input: string) {
 	const alphabet = 'abcdefghijklmnopqrstuvwxyz';
 	const digits = '0123456789';
@@ -54,7 +54,11 @@ export function succ(input: string) {
 		if (isDigit(lastAlphanumericChar)) {
 			chars.splice(lastAlphanumericCharPos, 0, '1');
 		} else {
-			chars.splice(lastAlphanumericCharPos, 0, isUpper(lastAlphanumericChar) ? 'A' : 'a')
+			chars.splice(
+				lastAlphanumericCharPos,
+				0,
+				isUpper(lastAlphanumericChar) ? 'A' : 'a'
+			);
 		}
 	}
 
