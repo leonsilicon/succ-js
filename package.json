@@ -5,6 +5,11 @@
 	"type": "module",
 	"license": "MIT",
 	"prettier": "@leonzalion/configs/prettier.cjs",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/leonzalion/succ-js.git"
+	},
+	"homepage": "https://github.com/leonzalion/succ-js#readme",
 	"commitlint": {
 		"extends": [
 			"@leonzalion/configs/commitlint.cjs"
