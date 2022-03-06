@@ -1,5 +1,5 @@
-import { succ } from '~/succ.js';
 import { test, expect } from 'vitest'
+import { succ } from '~/succ.js';
 
 test('succ works', () => {
 	expect(succ("abcd")).toEqual("abce");
