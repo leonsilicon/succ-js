@@ -1,4 +1,5 @@
 import { succ } from '~/succ.js';
+import { test, expect } from 'vitest'
 
 test('succ works', () => {
 	expect(succ("abcd")).toEqual("abce");
