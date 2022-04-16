@@ -1,9 +1,11 @@
 # succ-js
 
+[![npm version](https://badge.fury.io/js/succ-js.svg)](https://badge.fury.io/js/succ-js)
+
 ## Installation
 
-```zsh
-pnpm add succ-js
+```shell
+npm install succ-js
 ```
 
 ## Usage
