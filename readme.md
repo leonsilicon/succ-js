@@ -1,6 +1,6 @@
 # succ-js
 
-[![npm version](https://badge.fury.io/js/succ-js.svg)](https://badge.fury.io/js/succ-js)
+[![npm version](https://img.shields.io/npm/v/succ-js)](https://npmjs.com/package/succ-js)
 
 ## Installation
 
